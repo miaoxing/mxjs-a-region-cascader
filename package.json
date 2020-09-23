@@ -1,0 +1,17 @@
+{
+  "name": "@mxjs/a-region-cascader",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "twinh",
+  "license": "MIT",
+  "jest": {
+    "preset": "jest-preset-miaoxing"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^10.0.4",
+    "babel-jest": "^25.4.0",
+    "babel-preset-miaoxing": "^0.1.4",
+    "core-js": "^3.6.5",
+    "@miaoxing/dev": "^6.1.1"
+  }
+}
