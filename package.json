@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "twinh",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "jest": {
     "preset": "jest-preset-miaoxing"
   },
