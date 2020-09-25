@@ -12,8 +12,8 @@ export default class RegionCascader extends React.Component {
 
   static defaultProps = {
     fieldNames: {
-      label: 'name',
-      value: 'name',
+      label: 'shortName',
+      value: 'shortName',
       children: 'children'
     }
   }
@@ -22,13 +22,12 @@ export default class RegionCascader extends React.Component {
     options: [],
   };
 
-  componentDidMount() {
-    $.get($.url('api/regions')).then(ret => {
-      ret.data.forEach(row => {
-        row.isLeaf = false;
-      });
-      this.setState({options: ret.data})
+  async componentDidMount() {
+    const ret = await this.getRegions();
+    ret.data.forEach(row => {
+      row.isLeaf = !row.hasChildren;
     });
+    this.setState({options: ret.data});
   }
 
   onChange = (value) => {
@@ -38,24 +37,26 @@ export default class RegionCascader extends React.Component {
     this.props.onChange(value);
   }
 
-  loadData = selectedOptions => {
+  loadData = async (selectedOptions) => {
     const isLeaf = selectedOptions.length >= 2;
     const targetOption = selectedOptions[selectedOptions.length - 1];
+
     targetOption.loading = true;
+    const ret = await this.getRegions(targetOption.id);
+    targetOption.loading = false;
 
-    $.get($.url('api/regions', {parentId: targetOption[this.props.fieldNames.value]})).then((ret) => {
-      ret.data.forEach(row => {
-        row.isLeaf = isLeaf;
-      });
-
-      targetOption.loading = false;
-      targetOption[this.props.fieldNames.children] = ret.data;
-
-      this.setState({
-        options: [...this.state.options],
-      });
+    ret.data.forEach(row => {
+      row.isLeaf = !row.hasChildren || isLeaf;
+    });
+    targetOption[this.props.fieldNames.children] = ret.data;
+    this.setState({
+      options: [...this.state.options],
     });
   };
+
+  getRegions = async (parentId = 0) => {
+    return $.get($.url('api/regions', {virtual: 0, parentId: parentId}));
+  }
 
   render() {
     return (
