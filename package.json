@@ -16,6 +16,6 @@
     "babel-jest": "^25.4.0",
     "babel-preset-miaoxing": "^0.1.4",
     "core-js": "^3.6.5",
-    "@miaoxing/dev": "^6.1.1"
+    "@miaoxing/dev": "^6.1.2"
   }
 }
