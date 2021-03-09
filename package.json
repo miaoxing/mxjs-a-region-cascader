@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-region-cascader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.js",
   "author": "twinh",
   "license": "MIT",
@@ -16,6 +16,6 @@
     "babel-jest": "^25.4.0",
     "babel-preset-miaoxing": "^0.1.4",
     "core-js": "^3.6.5",
-    "@miaoxing/dev": "^6.2.0"
+    "@miaoxing/dev": "^6.3.0"
   }
 }
