@@ -2,6 +2,7 @@ import React from "react";
 import {Cascader} from 'antd';
 import PropTypes from 'prop-types';
 import {FormContext} from '@mxjs/a-form';
+import $ from 'miaoxing';
 
 export default class RegionCascader extends React.Component {
   static contextType = FormContext;
