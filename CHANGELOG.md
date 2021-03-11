@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.4...v0.1.5) (2021-03-11)
+
+
+### Bug Fixes
+
+* $ 未导入 ([10c1bf6](https://github.com/miaoxing/mxjs-a-region-cascader/commit/10c1bf6f0aae729047d162a1ce6300c41f558d6b))
+
 ## [0.1.4](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.3...v0.1.4) (2021-03-10)
 
 
