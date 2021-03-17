@@ -1,3 +1,16 @@
+## [0.1.7](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.6...v0.1.7) (2021-03-17)
+
+
+### Bug Fixes
+
+* 解决通过 `setFieldsValue` 设置表单值没有生效，改为 `outputConverter` 去设置 ([ca8726f](https://github.com/miaoxing/mxjs-a-region-cascader/commit/ca8726f2b8e2bbc084445a22e2184f72cc6cc2e7))
+
+
+### Features
+
+* 增加 `names` 属性，允许自定义输出的表单名称 ([1d41f09](https://github.com/miaoxing/mxjs-a-region-cascader/commit/1d41f09a3de6f8e9e21a4fcb59377e90173b2e5b))
+* 支持传入 `value`，增加 `parentId`，`url` 和 `maxLevel` 选项 ([0e970b1](https://github.com/miaoxing/mxjs-a-region-cascader/commit/0e970b1b457dba3b0b22650670e190269109e6eb))
+
 ## [0.1.6](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.5...v0.1.6) (2021-03-12)
 
 
