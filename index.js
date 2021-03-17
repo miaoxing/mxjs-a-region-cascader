@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {FormContext} from '@mxjs/a-form';
 import $ from 'miaoxing';
 import appendUrl from 'append-url';
-import {getValue} from 'rc-field-form/lib/utils/valueUtil';
+import {getValue, setValue} from 'rc-field-form/lib/utils/valueUtil';
 
 export default class RegionCascader extends React.Component {
   static contextType = FormContext;
@@ -14,6 +14,7 @@ export default class RegionCascader extends React.Component {
     parentId: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     url: PropTypes.string,
     maxLevel: PropTypes.number,
+    names: PropTypes.array,
   }
 
   static defaultProps = {
@@ -25,6 +26,7 @@ export default class RegionCascader extends React.Component {
     parentId: 0,
     url: $.url('api/regions', {virtual: 0}),
     maxLevel: 3,
+    names: ['country', 'province', 'city'],
   }
 
   state = {
@@ -94,10 +96,9 @@ export default class RegionCascader extends React.Component {
 
   outputConverter = (values) => {
     const value = getValue(values, [this.props.id]);
-    const [country, province, city] = value;
-    values.country = country;
-    values.province = province;
-    values.city = city;
+    this.props.names.forEach((name, index) => {
+      values = setValue(values, Array.isArray(name) ? name : [name], value[index]);
+    });
     return values;
   };
 
