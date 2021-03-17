@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import {FormContext} from '@mxjs/a-form';
 import $ from 'miaoxing';
 import appendUrl from 'append-url';
+import {getValue} from 'rc-field-form/lib/utils/valueUtil';
 
 export default class RegionCascader extends React.Component {
   static contextType = FormContext;
@@ -31,6 +32,12 @@ export default class RegionCascader extends React.Component {
   };
 
   caches = {};
+
+  constructor(props, context) {
+    super(props, context);
+
+    context.setOutputConverter(this.outputConverter);
+  }
 
   async componentDidMount() {
     await this.loadRegions();
@@ -85,12 +92,14 @@ export default class RegionCascader extends React.Component {
     }
   }
 
-  onChange = (value) => {
+  outputConverter = (values) => {
+    const value = getValue(values, [this.props.id]);
     const [country, province, city] = value;
-    this.context.setFieldsValue({country, province, city});
-
-    this.props.onChange(value);
-  }
+    values.country = country;
+    values.province = province;
+    values.city = city;
+    return values;
+  };
 
   loadData = () => {
     // 留空，以便菜单不会自动关闭
@@ -119,7 +128,6 @@ export default class RegionCascader extends React.Component {
         loadData={this.loadData}
         changeOnSelect
         {...props}
-        onChange={this.onChange}
       />
     );
   }
