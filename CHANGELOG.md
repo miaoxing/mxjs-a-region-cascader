@@ -1,3 +1,14 @@
+## [0.1.9](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.8...v0.1.9) (2021-04-27)
+
+
+
+
+
+### Dependencies
+
+* **babel-preset-miaoxing:** upgrade from `0.2.0` to `0.3.0`
+* **@miaoxing/dev:** upgrade from `6.3.4` to `6.4.0`
+
 ## [0.1.8](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.7...v0.1.8) (2021-03-22)
 
 
