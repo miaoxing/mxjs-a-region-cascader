@@ -17,5 +17,9 @@
     "babel-preset-miaoxing": "^0.3.0",
     "core-js": "^3.6.5",
     "@miaoxing/dev": "^6.4.0"
+  },
+  "ciDependencies": {
+    "babel-preset-miaoxing": "miaoxing/babel-preset-miaoxing",
+    "@miaoxing/dev": "miaoxing/dev"
   }
 }
