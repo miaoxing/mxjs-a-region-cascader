@@ -114,7 +114,7 @@ export default class RegionCascader extends React.Component {
   }
 
   getRegions = async (parentId) => {
-    const ret = await $.get(appendUrl(this.props.url, {parentId}));
+    const {ret} = await $.get(appendUrl(this.props.url, {parentId}));
     ret.data.forEach(row => {
       row.isLeaf = !row.hasChildren;
     });
