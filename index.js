@@ -1,4 +1,4 @@
-import React from "react";
+import { Component } from "react";
 import {Cascader} from 'antd';
 import PropTypes from 'prop-types';
 import {FormContext} from '@mxjs/a-form';
@@ -6,7 +6,7 @@ import $ from 'miaoxing';
 import appendUrl from 'append-url';
 import {getValue, setValue} from 'rc-field-form/lib/utils/valueUtil';
 
-export default class RegionCascader extends React.Component {
+export default class RegionCascader extends Component {
   static contextType = FormContext;
 
   static propTypes = {
