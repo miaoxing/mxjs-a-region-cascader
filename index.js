@@ -95,7 +95,7 @@ export default class RegionCascader extends Component {
   }
 
   outputConverter = (values) => {
-    const value = getValue(values, [this.props.id]);
+    const value = getValue(values, [this.props.id]) || [];
     this.props.names.forEach((name, index) => {
       values = setValue(values, Array.isArray(name) ? name : [name], value[index]);
     });
