@@ -1,3 +1,20 @@
+## [0.1.13](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.12...v0.1.13) (2022-01-12)
+
+
+### Bug Fixes
+
+* **a-region-cascader:** 无数据时，获取值错误 ([bfc5d14](https://github.com/miaoxing/mxjs-a-region-cascader/commit/bfc5d142fbc8e204253e19018f5bd2ed4d01469b))
+* 获取区域地址由浏览器地址改为接口地址 ([b510e9b](https://github.com/miaoxing/mxjs-a-region-cascader/commit/b510e9b5b07693519be7ffc18aab622bd9c3982c))
+
+
+
+
+
+### Dependencies
+
+* **babel-preset-miaoxing:** upgrade from `0.5.0` to `0.6.0`
+* **@miaoxing/dev:** upgrade from `8.0.0` to `8.0.1`
+
 ## [0.1.12](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.11...v0.1.12) (2021-10-28)
 
 
