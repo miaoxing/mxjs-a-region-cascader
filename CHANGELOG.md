@@ -1,3 +1,13 @@
+## [0.1.14](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.13...v0.1.14) (2022-02-05)
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `8.0.1` to `8.1.0`
+
 ## [0.1.13](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.12...v0.1.13) (2022-01-12)
 
 
