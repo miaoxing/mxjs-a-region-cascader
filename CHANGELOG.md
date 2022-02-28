@@ -1,3 +1,10 @@
+## [0.1.15](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.14...v0.1.15) (2022-02-28)
+
+
+### Bug Fixes
+
+* **a-region-cascader:** 选择省份时未加载城市 ([c3fc9f1](https://github.com/miaoxing/mxjs-a-region-cascader/commit/c3fc9f1fb11a39ae43b8fa3040bc40511ce8c153))
+
 ## [0.1.14](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v0.1.13...v0.1.14) (2022-02-05)
 
 
