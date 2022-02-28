@@ -85,7 +85,9 @@ export default class RegionCascader extends Component {
         parentOptions = data;
       }
 
-    this.setState({options});
+    this.setState({
+      options: [...options],
+    });
   }
 
   async componentDidUpdate(prevProps, prevState, snapshot) {
