@@ -12,7 +12,7 @@
     "preset": "jest-preset-miaoxing"
   },
   "devDependencies": {
-    "@testing-library/react": "^11.2.6",
+    "@testing-library/react": "^14",
     "babel-jest": "^25.4.0",
     "babel-preset-miaoxing": "^0.7.0",
     "core-js": "^3.6.5",
