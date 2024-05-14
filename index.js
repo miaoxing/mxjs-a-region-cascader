@@ -24,7 +24,7 @@ export default class RegionCascader extends Component {
       children: 'children'
     },
     parentId: 0,
-    url: $.apiUrl('regions', {virtual: 0}),
+    url: appendUrl('regions', {virtual: 0}),
     maxLevel: 3,
     names: ['country', 'province', 'city'],
   }
