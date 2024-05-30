@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v1.0.9...v1.1.0) (2024-05-30)
+
+
+### Features
+
+* 简化接口地址 ([7454b04](https://github.com/miaoxing/mxjs-a-region-cascader/commit/7454b0493895d7cdc316b414ef77bfcdf25159f9))
+
 ## [1.0.9](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v1.0.8...v1.0.9) (2024-03-31)
 
 
