@@ -1,7 +1,7 @@
 {
   "name": "@mxjs/a-region-cascader",
   "version": "1.1.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "author": "twinh",
   "license": "MIT",
   "publishConfig": {
