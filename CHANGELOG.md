@@ -1,3 +1,19 @@
+## [1.1.1](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v1.1.0...v1.1.1) (2024-07-31)
+
+
+### Bug Fixes
+
+* 更改入口文件，解决 vite "Failed to resolve entry for package" 问题 ([ea3f1d3](https://github.com/miaoxing/mxjs-a-region-cascader/commit/ea3f1d359f2b3019cda4b86211020a66921a52c2))
+
+
+
+
+
+### Dependencies
+
+* **babel-preset-miaoxing:** upgrade from `0.7.0` to `0.8.0`
+* **@miaoxing/dev:** upgrade from `9.1.1` to `9.1.2`
+
 # [1.1.0](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v1.0.9...v1.1.0) (2024-05-30)
 
 
