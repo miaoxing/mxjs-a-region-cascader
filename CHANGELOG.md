@@ -1,3 +1,13 @@
+## [1.1.5](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v1.1.4...v1.1.5) (2024-12-31)
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `9.3.0` to `9.3.1`
+
 ## [1.1.4](https://github.com/miaoxing/mxjs-a-region-cascader/compare/v1.1.3...v1.1.4) (2024-12-30)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-region-cascader",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "main": "index.jsx",
   "author": "twinh",
   "license": "MIT",
@@ -14,7 +14,7 @@
   "devDependencies": {
     "@testing-library/react": "^14",
     "babel-preset-miaoxing": "^0.8.1",
-    "@miaoxing/dev": "^9.3.0"
+    "@miaoxing/dev": "^9.3.1"
   },
   "ciDependencies": {
     "babel-preset-miaoxing": "miaoxing/babel-preset-miaoxing",
